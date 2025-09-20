@@ -1,9 +1,8 @@
 from math import *
 
-print('Введите Xbeg, Xend и Dx')
-xb = float(input('Xbeg='))
-xe = float(input('Xend='))
-dx = float(input('Dx='))
+xb = float(input('Введите Xbeg='))
+xe = float(input('Введите Xend='))
+dx = float(input('Введите Dx='))
 print("Xbeg={0: 7.2f} Xend={1: 7.2f}".format(xb, xe))
 print(" Dx={0: 7.2f}".format(dx))
 xt = xb
