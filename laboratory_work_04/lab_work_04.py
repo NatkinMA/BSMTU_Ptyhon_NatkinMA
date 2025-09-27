@@ -46,3 +46,4 @@ for i in range(len(arr)):
             arr[j], arr[j+1] = arr[j+1], arr[j]
     print("{0: 7.3f}".format(arr[i]), end=" ")
 print()
+
