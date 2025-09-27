@@ -14,7 +14,7 @@ for n in range(10):
         flag = True
     else:
         flag = False
-    print("{0: 7.2f} {1: 7.2f}".format(x, y), end=" ")
+    print("{0: 7.2f} {1: 7.2f}".format(x, y), end=' ')
     if flag:
         print("Yes")
     else:
