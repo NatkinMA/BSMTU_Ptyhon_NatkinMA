@@ -8,12 +8,12 @@ def function_2(x):
 
 with open("input.txt", "r") as input_file:
     with open("output.txt", "w") as output_file:
-        header = "  a     x     y1     y2"
+        header = "    a       x        y1        y2"
         print(header)
         output_file.write(header + "\n")
         for line in input_file:
             a, x = line.split()
-            output_line = "{0:.2f} {1:.2f} {2:.4f} {3:.4f}".format(float(a),
+            output_line = "{0:7.2f} {1:7.2f} {2:9.4f} {3:9.4f}".format(float(a),
                                                     float(x),
                                                     function_1(float(a), float(x)),
                                                     function_2(float(x)))
