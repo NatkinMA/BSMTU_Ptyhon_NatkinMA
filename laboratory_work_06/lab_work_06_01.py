@@ -6,16 +6,16 @@ def function_1(a, x):
 def function_2(x):
     return pow(2, log(3-cos(pi/4+2*x), 3+sin(x))/(1+tan(2*x/pi)**2))
 
-with open("input.txt", "r") as input_file:
-    with open("output.txt", "w") as output_file:
-        header = "    a       x        y1        y2"
-        print(header)
-        output_file.write(header + "\n")
-        for line in input_file:
-            a, x = line.split()
-            output_line = "{0:7.2f} {1:7.2f} {2:9.4f} {3:9.4f}".format(float(a),
-                                                    float(x),
-                                                    function_1(float(a), float(x)),
-                                                    function_2(float(x)))
-            print(output_line)
-            output_file.write(output_line + "\n")
+with open("input.txt", "r") as input_file, \
+        open("output.txt", "w") as output_file:
+    header = "    a       x        y1        y2"
+    print(header)
+    output_file.write(header + "\n")
+    for line in input_file:
+        a, x = line.split()
+        output_line = "{0:7.2f} {1:7.2f} {2:9.4f} {3:9.4f}".format(float(a),
+                                                                    float(x),
+                                                                    function_1(float(a), float(x)),
+                                                                    function_2(float(x)))
+        print(output_line)
+        output_file.write(output_line + "\n")
